@@ -34,8 +34,29 @@ int main() {
 		for (variable inicial; condicion; incremento) {
 			<sentencia>
 		}
-
 		
+		Antes de la primera iteración se ejecutará la iniciación del bucle, que puede ser una
+		expresión o una declaración. En este apartado se iniciarán las variables usadas en el
+		bucle. Estas variables pueden ser declaradas en este punto, pero en ese caso tendrán
+		validez sólo dentro del bucle "for". Después de cada iteración se ejecutará el
+		incremento de las variables del bucle.
+
 	*/
     
-}
+	//  Ejemplos
+	int i = 0;
+	std::cout<<"While"<<std::endl;
+	while ( i < 10  )  {
+		std::cout<<i++<<std::endl;
+	}
+	std::cout<<"do While"<<std::endl;
+	do {
+		std::cout<<++i<<std::endl;
+	} while ( i < 20 );
+
+	std::cout<<"for"<<std::endl;
+	for (int x = 0; x < 10 ; x++) {
+		std::cout<<x<<std::endl;
+	}
+		
+} 
